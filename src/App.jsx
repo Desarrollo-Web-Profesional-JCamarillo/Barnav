@@ -2,8 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from "./componentes/secciones/Home.jsx"
 import Cursos from "./componentes/secciones/Cursos.jsx"
 import About from "./componentes/secciones/About.jsx"
+import Login from "./componentes/secciones/Login.jsx"
+import Galeria from "./componentes/secciones/Galeria.jsx"
+import Contacto from "./componentes/secciones/Contacto.jsx"
 import Navbar from './componentes/Navbar'
-import Banner from './componentes/Banner'
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/galeria" element={<Galeria />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </BrowserRouter>
-
     </div>
   );
 };
